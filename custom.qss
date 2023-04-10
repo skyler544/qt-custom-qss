@@ -1,0 +1,94 @@
+/* MISC */
+QMenuBar, QToolBar, QFrame, QMenu {
+    border: none;
+}
+QToolTip {
+    background: palette(window);
+}
+QGroupBox {
+    border: 1px solid palette(highlight);
+    margin-top: 3ex;
+}
+QListView, QTableView, QTreeView, QTextEdit, QTextBrowser, QColumnView {
+    background: palette(dark);
+    border: 1px solid palette(highlight);
+    padding: 1px;
+}
+QHeaderView::section {
+    background-color: palette(window);
+    border: 1px solid palette(dark);
+    padding: 4px;
+}
+
+/* BUTTONS */
+QPushButton, QComboBox {
+    background: palette(window);
+    border: 1px solid palette(light);
+    border-radius: 3px;
+    padding: 6px;
+}
+QPushButton:hover, QComboBox:hover {
+    background: palette(light);
+    border: 1px solid palette(dark);
+    border-radius: 3px;
+    padding: 6px;
+}
+QPushButton:pressed {
+    background: palette(highlight);
+    border: 1px solid palette(dark);
+    border-radius: 3px;
+    padding: 6px;
+}
+
+/* SCROLLBARS */
+QScrollBar {
+    background: palette(window);
+}
+QScrollBar:horizontal {
+    height: 10px;
+}
+QScrollBar:vertical {
+    width: 10px;
+}
+QScrollBar::handle {
+    background: palette(light);
+}
+QScrollBar::handle:hover, QScrollBar::add-line:hover, QScrollBar::sub-line:hover {
+    background: palette(highlight);
+}
+QScrollBar::add-line {
+    subcontrol-origin: none;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: palette(window);
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+QScrollBar::sub-line {
+    subcontrol-origin: none;
+}
+
+/* TABS */
+QTabBar::tab {
+    background: palette(alternatebase);
+    min-width: 8ex;
+    padding: 8px;
+    border: 1px solid palette(dark);
+    border-bottom-color: palette(window);
+    margin-bottom: 1px;
+}
+QTabBar::tab:selected {
+    background: palette(light);
+    border: 1px solid palette(highlight);
+    border-bottom-color: palette(light);
+    margin-bottom: -1px;
+}
+QTabWidget::pane {
+    background: palette(light);
+    border: 1px solid palette(highlight);
+    margin-top: -1px;
+}
